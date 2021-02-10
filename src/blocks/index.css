@@ -1,0 +1,34 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #2d4262;
+  background-color: #d4dde1;
+}
+
+.todo {
+  margin-bottom: 1rem;
+}
+
+.todo.completed span {
+  text-decoration: line-through;
+}
+
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #cdcdc0;
+  padding: 1rem;
+  color: #2d4262;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.todo i {
+  z-index: 2;
+}
