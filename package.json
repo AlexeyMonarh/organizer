@@ -6,7 +6,8 @@
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",
