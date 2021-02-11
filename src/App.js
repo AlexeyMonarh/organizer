@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer } from 'react'
-import TodoList from './TodoList'
-import { Context } from './context/context'
-import reducer from './reducer'
+import ListItems from './components/ListItems/ListItems'
+import { Context } from './contexts/context'
+import reducer from './components/reducer/reducer'
 
 export default function App() {
   const [state, dispatch] = useReducer(reducer, (JSON.parse(localStorage.getItem('todos')) || []))
@@ -38,7 +38,7 @@ export default function App() {
           <label>Добавить пункт...</label>
         </div>
 
-        <TodoList todos={state} />
+        <ListItems todos={state} />
       </div>
     </Context.Provider>
   );
